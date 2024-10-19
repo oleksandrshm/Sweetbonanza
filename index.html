@@ -99,10 +99,34 @@
             transition: background-color 0.3s;
         }
 
-        .cta-button:hover, .play-button:hover, .download-button:hover {
-            background-color: #f50057;
+        .cta-button {
+            background-color: #28a745; 
+            color: white;
+            margin-left: 30px; 
+            position: relative; 
+            top: -10px; 
         }
 
+        .cta-button:hover {
+            background-color: #218838; 
+        }
+
+        .cta-button, .play-button, .download-button:hover {
+            background-color: #f50057;
+        }
+        .how-to-play {
+            background-color: #a349a4;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
         .play-button {
             background-color: #ffca28;
             color: #333;
@@ -215,7 +239,10 @@
         <a class="main-navigation__company-logo navbar-brand" href="https://www.pragmaticplay.com/ru/">
             <img src="https://www.pragmaticplay.com/wp-content/themes/gp-theme-basic/libs/dist/images/PP-white-logo.svg" alt="Pragmatic Play">
         </a>
-        <h1>Sweet Bonanza 1000 — Играть онлайн</h1>
+        <div style="display: flex; align-items: center;">
+            <h1 style="margin-right: 10px;">Sweet Bonanza 1000 — Играть онлайн</h1>
+            <a href="#bonuses" class="cta-button">Получить Бонус</a> <!-- Кнопка справа от заголовка -->
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">Описание игры</a></li>
@@ -230,7 +257,7 @@
 
     <div style="text-align: center; margin: 20px;">
         <a href="#how-to-play" class="play-button">Играть Онлайн Бесплатно</a>
-        <a href="#how-to-play" class="cta-button">Как играть</a>
+        <a href="#how-to-play" class="how-to-play">Как играть</a>
         <a href="slot-download-link" class="download-button">Скачать слот</a>
         <a href="demo-download-link" class="download-button">Скачать демо</a>
     </div>
@@ -256,20 +283,20 @@
             </tr>
             <tr>
                 <td>Бесплатные вращения</td>
-                <td>Получите 10 бесплатных вращений при выпадении 4 и более скаттеров.</td>
+                <td>Заработайте бесплатные вращения при выпадении трех и более символов Scatter.</td>
             </tr>
             <tr>
-                <td>Множители</td>
-                <td>Множители увеличивают ваш выигрыш от 2x до 100x.</td>
+                <td>Множитель выигрыша</td>
+                <td>Получите возможность увеличить свой выигрыш до 100x!</td>
             </tr>
         </table>
     </section>
 
     <section id="strategies">
-        <h2>Стратегии для Sweet Bonanza 1000</h2>
-        <p style="color:#000">Управление балансом и выбор правильных ставок — ключ к успеху. Всегда играйте ответственно и используйте бонусные функции.</p>
+        <h2>Стратегии для игры</h2>
+        <p style="color:#000">Используйте разумные стратегии ставок, чтобы увеличить свои шансы на выигрыш. Не забывайте следить за своим бюджетом и получать максимум удовольствия от игры!</p>
     </section>
-   
+        
     <div class="socials">
         <div class="linkedin">
             <a target="_blank" rel="nofollow" href="https://www.linkedin.com/company/pragmatic-play">
@@ -292,9 +319,9 @@
             </a>
         </div>
     </div>
-    
     <footer>
         <p>&copy; 2024 Sweet Bonanza 1000. Все права защищены.</p>
     </footer>
+
 </body>
 </html>
