@@ -64,7 +64,6 @@
             font-size: 19px;
         }
 
-       
         section {
             padding: 40px;
             text-align: center;
@@ -83,10 +82,10 @@
             font-size: 1.5rem;
             line-height: 1.6;
             text-align: center;
-            color:white;
+            color: white;
         }
 
-        .cta-button, .play-button {
+        .cta-button, .play-button, .download-button {
             background-color: #a349a4;
             color: white;
             padding: 15px 30px;
@@ -100,7 +99,7 @@
             transition: background-color 0.3s;
         }
 
-        .cta-button:hover, .play-button:hover {
+        .cta-button:hover, .play-button:hover, .download-button:hover {
             background-color: #f50057;
         }
 
@@ -187,7 +186,7 @@
                 margin: 10px 0; 
             }
 
-            .cta-button, .play-button {
+            .cta-button, .play-button, .download-button {
                 font-size: 1rem;
                 padding: 10px 20px;
             }
@@ -232,6 +231,8 @@
     <div style="text-align: center; margin: 20px;">
         <a href="#how-to-play" class="play-button">Играть Онлайн</a>
         <a href="#how-to-play" class="cta-button">Как играть</a>
+        <a href="slot-download-link" class="download-button">Скачать слот</a>
+        <a href="demo-download-link" class="download-button">Скачать демо</a>
     </div>
 
     <section id="about">
@@ -247,7 +248,7 @@
 
     <section id="bonuses">
         <h2>Бонусы в Sweet Bonanza 1000</h2>
-        <pstyle="color:#000" >Игра предлагает бесплатные вращения и множители выигрышей. Попробуйте поймать удачу и увеличьте свои выигрыши!</p>
+        <p style="color:#000">Игра предлагает бесплатные вращения и множители выигрышей. Попробуйте поймать удачу и увеличьте свои выигрыши!</p>
         <table>
             <tr>
                 <th>Бонус</th>
@@ -266,10 +267,8 @@
 
     <section id="strategies">
         <h2>Стратегии для Sweet Bonanza 1000</h2>
-        <p style="color:#000>Управление балансом и выбор правильных ставок — ключ к успешной игре. Исследуйте различные стратегии и находите оптимальный подход!</p>
-        <img src="image2.webp" alt="Стратегии для Sweet Bonanza 1000">
+        <p style="color:#000">Управление балансом и выбор правильных ставок — ключ к успеху. Всегда играйте ответственно и используйте бонусные функции.</p>
     </section>
-
     <h4 style="text-align: center; margin: 20px; color:white; font-size:1.5rem;">Посмотрите на некоторые из наших наград!</h4>
     <ul class="gp__footer__logos awards">
         <li class="gp__footer__item_awards">
@@ -319,6 +318,7 @@
         </li>
     </ul>
 
+    <!-- Социальные сети -->
     <div class="socials">
         <div class="linkedin">
             <a target="_blank" rel="nofollow" href="https://www.linkedin.com/company/pragmatic-play">
@@ -345,16 +345,5 @@
     <footer>
         <p>&copy; 2024 Sweet Bonanza 1000. Все права защищены.</p>
     </footer>
-
-    <script>
-        document.querySelectorAll('nav ul li a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
